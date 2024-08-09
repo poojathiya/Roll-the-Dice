@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+ <html lang=en>
+            <meta charset=UTF-8>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <link href=style.css rel=stylesheet>
+    <link href=query.css rel=stylesheet>
+    <title>Document</title>
+    <div class=container>
+        <div class=game style=display:none>
+            <div class=dice>
+                <div class="dot hidden dot-1"></div>
+                <div class="dot hidden dot-2"></div>
+                <div class="dot hidden dot-3"></div>
+                <div class="dot hidden dot-4"></div>
+                <div class="dot hidden dot-5"></div>
+                <div class="dot hidden dot-6"></div>
+                <div class="dot hidden dot-7"></div>
+                <div class="dot hidden dot-8"></div>
+                <div class="dot hidden dot-9"></div>
+                <div class=logo><img alt="game logo" src=img/query.png class=logo></div>
+                <div class="display-none winner">
+                    <p class=text>Player is the winner
+                    <p>🙌
+                </div><button class=btn>Play</button>
+            </div>
+            <div class="grid grid-col-2">
+                <div class="player active-player player-1">
+                    <div class=player-img><img alt="" src=img/user.png></div>
+                    <div class=title>
+                        <p>You
+                    </div>
+                    <div class=score>
+                        <p class=player-1-score>0
+                    </div>
+                </div>
+                <div class="player player-2">
+                    <div class=player-img><img alt="" src=img/robo.png></div>
+                    <div class=title>
+                        <p>Player 2
+                    </div>
+                    <div class=score>
+                        <p class=player-2-score>0
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=rule-card>
+            <div class="close close-btn">×</div>
+            <div class=title>Welcome to Roll the Dice 🎲</div>
+            <div class=rule-title>Rules :</div>
+            <ol class=rules>
+                <li class=rule>The game is played by two players.
+                <li class=rule>Each player takes turns rolling a six-sided dice.
+                <li class=rule>If a player rolls a <strong class=strong>6</strong> , they get an additional turn to roll
+                    the dice.
+                <li class=rule>If a player rolls a <strong class=strong>1</strong>, <strong class=strong>5</strong>
+                    points are deducted from their score and awarded to their opponent.
+                <li class=rule>The first player to reach <strong class=strong>30</strong> points wins the game.
+            </ol><button class="close start-btn">Start</button>
+        </div>
+    </div>
+    <script src=script.js></script>

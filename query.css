@@ -1,0 +1,43 @@
+/* rem and em do NOT depend on the html font size in media queries 
+Instead 1em = 1rem = 16px */
+
+@media (max-width:39.125em) {
+    .container {
+        padding: 5rem;
+    }
+
+    .rule-card {
+        width: 35rem;
+    }
+
+    .grid {
+        grid-template-columns: auto;
+        row-gap: 11rem;
+    }
+
+    .player {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        gap: 1rem;
+        border-radius: 11px;
+    }
+
+    .dice {
+        width: 8rem;
+        height: 8rem;
+        padding: 1rem;
+    }
+
+    
+
+    .btn {
+        left: 119%;
+        bottom: 1rem;
+    }
+
+    .dot {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
